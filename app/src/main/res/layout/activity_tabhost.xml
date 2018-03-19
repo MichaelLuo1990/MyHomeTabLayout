@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/th_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_top" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--方法三引用start-->
+            <include
+                android:id="@+id/ll_tab_one"
+                layout="@layout/layout_tab_one" />
+
+            <include
+                android:id="@+id/ll_tab_two"
+                layout="@layout/layout_tab_two" />
+
+            <include
+                android:id="@+id/ll_tab_three"
+                layout="@layout/layout_tab_three" />
+
+            <include
+                android:id="@+id/ll_tab_four"
+                layout="@layout/layout_tab_four" />
+            <!--方法三引用end-->
+        </FrameLayout>
+
+        <!-- 隐藏TabWidget -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></TabWidget>
+
+        <!-- 使用RadioGroup替代TabWidget -->
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/tab_icon_weixin"
+                style="@style/tab_button_bg"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_tab_one"
+                android:text="Tab1"
+                android:textColor="#1296db" />
+
+            <RadioButton
+                android:id="@+id/tab_icon_address"
+                style="@style/tab_button_bg"
+                android:drawableTop="@drawable/selector_tab_two"
+                android:text="Tab2"
+                android:textColor="#8a8a8a" />
+
+            <RadioButton
+                android:id="@+id/tab_icon_friend"
+                style="@style/tab_button_bg"
+                android:drawableTop="@drawable/selector_tab_three"
+                android:text="Tab3"
+                android:textColor="#8a8a8a" />
+
+            <RadioButton
+                android:id="@+id/tab_icon_setting"
+                style="@style/tab_button_bg"
+                android:drawableTop="@drawable/selector_tab_four"
+                android:text="Tab4"
+                android:textColor="#8a8a8a" />
+
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

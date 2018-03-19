@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.michael.myhometablayout.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="首页布局视图（页面）解析"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#eee" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toAtyGroupTabAtyClick"
+                android:text="ActivityGroup实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继承ActivityGroup，注册底部按钮监听事件控制底部imageButton样式、textview样式、使用removeAllViews与addView方法实现对应layout(LinearLayout或其他layout)显示与切换；API-13废弃，推荐使用fragment实现；点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toTabHostAtyClick"
+                android:text="tabHost实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可继承ActivityGroup、TabActivity、Activity(推荐)，RadioGroup(注册OnCheckedChangeListener)+RadioButton 控制底部imageButton样式、textview样式、使用selector.xml方式实现对应layout(LinearLayout或其他layout)显示与切换；点击底部tab切换页面；(TabActivity、activityGroup)API-13废弃，推荐使用activity实现；点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toOnlyViewPagerAtyClick"
+                android:text="纯viewpager实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="viewpager+pagerAdapter控制底部imageButton样式、textview样式、对应layout(LinearLayout或其他layout)显示与切换；滑动layout或点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toOnlyFragmentAtyClick"
+                android:text="纯fragment实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继承FragmentActivity，注册底部按钮监听事件控制底部imageButton样式、textview样式、对应layout(LinearLayout或其他layout)显示与切换；点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toVpFgAtyClick"
+                android:text="viewpager+fragment实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继承FragmentActivity，使用FragmentPagerAdapter+注册底部按钮监听事件控制底部imageButton样式、textview样式、对应layout(LinearLayout或其他layout)显示与切换；滑动或点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toCusATIAtyClick"
+                android:text="自定义alphaTabsIndicator+viewpager(绑定fragment)实现" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toATIOtherStyleAtyClick"
+                android:text="其他布局风格样式" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仿微信底部导航栏，自定义alphaTabsIndicator控制tab切换渐变、tab按钮右上角数量提示；viewpager与fragment绑定联动(ref github)；滑动或点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toScaleBgChangeAtyClick"
+                android:text="自定义bottomNavigation实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义bottomNavigation控制tab切换缩放、导航栏背景色改变(ref github)；点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toTabLayoutVPAtyClick"
+                android:text="TabLayout实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原生design包下tabLayout + viewpager(fragmentPagerAdapter适配fragment)方式实现tab切换；滑动或点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toBottomNavigationViewVPAtyClick"
+                android:text="bottomNavigationView实现" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原生design包下bottomNavigationView + viewpager方式(利用反射，改变mShiftingMode滑动参数)实现tab切换；滑动或点击底部tab切换页面" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#eee" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

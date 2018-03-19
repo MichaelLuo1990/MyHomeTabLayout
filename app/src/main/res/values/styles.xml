@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 按钮文字样式 -->
+    <style name="tab_text_color">
+        <item name="android:textColor">#1296db</item>
+        <item name="android:textSize">12dp</item>
+        <!-- 从左向右跑马灯效果 -->
+        <!--<item name="android:ellipsize">marquee</item>-->
+        <!-- 单行显示 -->
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="tab_button_bg">
+        <item name="android:textAppearance">@style/tab_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#e6e6e6</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--
+1.tabIndicatorColor：TabLayout指示器的颜色
+2.tabTextColor: tab默认字体的颜色
+3.tabSelectedTextColor：当前选择的tab的字体颜色
+4.tabBackground：背景
+5.tabIndicatorHeight：TabLayout指示器高度
+-->
+    <style name="CustomTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+        <item name="tabTextColor">@color/tab_tv_normal</item>
+        <item name="tabSelectedTextColor">@color/tab_tv_selected</item>
+        <item name="tabBackground">@drawable/bg_tab_border_selecter</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
+
+</resources>

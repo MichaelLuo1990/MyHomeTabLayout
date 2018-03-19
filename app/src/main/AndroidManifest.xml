@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.michael.myhometablayout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--viewpager+fragment实现方式-->
+        <activity android:name=".viewpagerfragment.HomeViewPagerFragmentActivity" />
+        <!--仅使用fragment实现方式-->
+        <activity android:name=".onlyfragment.HomeFragmentActivity" />
+        <!--仅使用viewpager实现方式-->
+        <activity android:name=".onlyviewpager.HomeViewPagerActivity" />
+        <!--ActivityGroup实现方式-->
+        <activity android:name=".activitygroup.AtyGroupTabActivity" />
+        <activity android:name=".activitygroup.AGOneActivity" />
+        <activity android:name=".activitygroup.AGTwoActivity" />
+        <activity android:name=".activitygroup.AGThreeActivity" />
+        <activity android:name=".activitygroup.AGFourActivity" />
+        <!--tabHost实现方式-->
+        <activity android:name=".tabhost.HomeTabHostActivity" />
+        <activity android:name=".tabhost.THOneActivity" />
+        <activity android:name=".tabhost.THTwoActivity" />
+        <activity android:name=".tabhost.THThreeActivity" />
+        <activity android:name=".tabhost.THFourActivity" />
+        <!--<activity android:name=".tabhost.TabHostTopActivity" />-->
+        <!--自定义tab渐变切换+指示器提示信息风格实现方式-->
+        <activity android:name=".customalphatabsindicator.HomeAlphaTabIndicatorActivity" />
+        <activity android:name=".customalphatabsindicator.HomeATIOtherStyleActivity" />
+        <!--自定义bottomNavigation，底部tab缩放+背景颜色改变显示方式-->
+        <activity android:name=".customscalebgchange.HomeScaleBgChangeActivity" />
+        <!--design包tabLayout+viewpager实现方式-->
+        <activity android:name=".tablayoutviewpager.HomeTabLayoutVPActivity" />
+        <!--原生design包bottomNavigationView+viewpager实现-->
+        <activity android:name=".bottomnavigationviewvp.HomeBottomNavigationViewVPActivity" />
+
+    </application>
+
+</manifest>
